@@ -1,0 +1,4 @@
+#!/usr/bin/env perl
+use Mojo::Server::Hypnotoad;
+my $toad = Mojo::Server::Hypnotoad->new;
+$toad->run('emaildocket.pl', 'server.conf');

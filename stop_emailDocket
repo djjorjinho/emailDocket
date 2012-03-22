@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+pid=`cat hypnotoad.pid`
+if [ $pid ]; then
+    kill $pid
+fi
+
+killall mongod

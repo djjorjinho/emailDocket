@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+pid=`cat hypnotoad.pid`
+if [ $pid ]; then
+    kill -SIGUSR2 $pid
+fi
